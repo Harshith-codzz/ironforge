@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Gym - Your Local Fitness Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">IRONFORGE GYM</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Build Your Best Self</h1>
+            <p>Join the premier local gym with state-of-the-art equipment and expert trainers.</p>
+            <a href="#membership" class="cta-button">Join Now</a>
+        </div>
+    </section>
+
+    <section id="classes" class="classes">
+        <h2>Our Classes</h2>
+        <div class="class-grid">
+            <div class="class-card">
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase power with our expert-led strength sessions.</p>
+            </div>
+            <div class="class-card">
+                <h3>HIIT</h3>
+                <p>High-Intensity Interval Training to burn fat and boost cardio.</p>
+            </div>
+            <div class="class-card">
+                <h3>Yoga & Mobility</h3>
+                <p>Improve flexibility and core strength in a calming environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership" class="membership">
+        <h2>Membership Plans</h2>
+        <div class="plan-grid">
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <div class="price">$29/mo</div>
+                <ul>
+                    <li>Full Gym Access</li>
+                    <li>Locker Room Access</li>
+                </ul>
+                <button onclick="window.location.href='#contact'">Select</button>
+            </div>
+            <div class="plan-card featured">
+                <h3>Pro</h3>
+                <div class="price">$49/mo</div>
+                <ul>
+                    <li>Full Gym Access</li>
+                    <li>All Classes Included</li>
+                    <li>1 PT Session/mo</li>
+                </ul>
+                <button onclick="window.location.href='#contact'">Select</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us / Sign Up</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <select id="interest" name="interest">
+                <option value="basic">Basic Plan</option>
+                <option value="pro">Pro Plan</option>
+                <option value="inquiry">General Inquiry</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Message (Optional)"></textarea>
+            <button type="submit">Submit Request</button>
+        </form>
+        <div id="form-response"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IronForge Gym. All rights reserved.</p>
+        <p>123 Fitness Blvd, Muscle City</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
